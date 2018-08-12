@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Continue-关于我们</title>
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="icon" href="../img/continue113-1.ico">
+</head>
+<body>
+<div class="nav">
+    <img src="../img/continue113-1.ico" style="position: absolute;top:10px;left: 5px "/>
+    <ul class="nav-list">
+        <li id="main" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToIndexHtml()" class="nav-list-content">
+            Continue
+        </li>
+        <li id="contactus" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToContactUsHtml()"
+            class="nav-list-content nav-title-position">联系我们
+        </li>
+        <li id="new" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToNewHtml()"
+            class="nav-list-content nav-title-position-2">招新计划
+        </li>
+        <li id="aboutus" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToAboutUsHtml()"
+            class="nav-list-content nav-title-position-2">关于我们
+        </li>
+    </ul>
+</div>
+
+<div id="container">
+    <div class="container-con">
+        <p id="hereiscontinue" class="newpage-content large">这里是Continue!</p>
+        <div style="position: absolute;left: 15%;top: 15%">
+            <div id="prize">
+                <p class="white" style="margin-top: 0;padding-top: 10%">我们的荣耀</p>
+                <ul>
+                    <li class="white">2013年微软创新杯一等奖</li>
+                </ul>
+            </div>
+
+            <div id="things" style="margin-top: 5%">
+                <p class="white">2018年我们做过的事</p>
+                <ul>
+                    <li class="white">SOSCON 2018</li>
+                </ul>
+            </div>
+
+            <div id="prepose" style="margin-top: 5%;">
+                <p class="white">我们的目标</p>
+                <p class="white">聚集一些有技术，热爱技术的人，做一些学生时代能做的事，因为这时的我们是充满热情，不惧失败的。</p>
+            </div>
+
+            <div id="daily" style="margin-top: 5%">
+                <p class="white">俱乐部的日常</p>
+                <p class="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;敲代码时候的我们</p>
+                <!--<img src="../img/realcoder.jpg" style="width: 20%"/>
+                <img src="../img/member.png" style="width: 30%;margin-left: 5%"/>-->
+                <p class="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;玩游戏时候的我们</p>
+                <p class="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日常熬夜时候的我们</p>
+                <p class="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看电影时候的我们</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/javascript.js"></script>
+<script>
+    var pagename = $('#aboutus');
+
+    pagename.css('borderBottom','2px solid white');
+
+    function ToIndexHtml() {
+        window.location = '../index.html';
+    }
+
+    function borderout() {
+        event.toElement.style.borderBottom = '2px solid white'
+    }
+
+    function borderdisapper() {
+        event.fromElement.style.borderBottom = 'none';
+    }
+
+    function ToNewHtml() {
+        window.location = 'new.html';
+    }
+
+    function ToAboutUsHtml() {
+        window.location = 'AboutUs.html';
+    }
+
+    function ToContactUsHtml() {
+        window.location = 'ContactUs.html';
+    }
+</script>
+</html>

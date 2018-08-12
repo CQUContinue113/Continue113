@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello continue</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="icon" href="img/continue113-1.ico">
+</head>
+<body>
+<div class="nav">
+    <img src="img/continue113-1.ico" style="position: absolute;top:10px;left: 5px "/>
+    <ul class="nav-list">
+        <li id="main" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToIndexHtml()" class="nav-list-content">
+            Continue
+        </li>
+        <li id="contactus" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToContactUsHtml()"
+            class="nav-list-content nav-title-position">联系我们
+        </li>
+        <li id="new" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToNewHtml()"
+            class="nav-list-content nav-title-position-2">招新计划
+        </li>
+        <li id="aboutus" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToAboutUsHtml()"
+            class="nav-list-content nav-title-position-2">关于我们
+        </li>
+    </ul>
+</div>
+
+<div id="container">
+    <div id="continue">
+        <p class="img-position"><img src="img/continue3.png" style="width: 30%"></p>
+        <p class="font">Hello!<br/>Continue</p>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/javascript.js"></script>
+<script>
+    function ToIndexHtml() {
+        window.location = 'index.html';
+    }
+
+    function borderout() {
+        event.toElement.style.borderBottom = '2px solid white'
+    }
+
+    function borderdisapper() {
+        event.fromElement.style.borderBottom = 'none';
+    }
+
+    function ToNewHtml() {
+        window.location = 'html/new.html';
+    }
+
+    function ToAboutUsHtml() {
+        window.location = 'html/AboutUs.html';
+    }
+
+    function ToContactUsHtml() {
+        window.location = 'html/ContactUs.html';
+    }
+</script>
+</html>
