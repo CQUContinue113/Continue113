@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Continue-招新计划</title>
@@ -8,13 +8,13 @@
 </head>
 <body>
 <div class="nav">
-    <img src="../img/continue113-1.ico" style="position: absolute;top:10px;left: 5px "/>
+    <img src="../img/continue113-1.ico" style="position: absolute;top:10px;left: 10px "/>
     <ul class="nav-list">
-        <li id="main" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToIndexHtml()" class="nav-list-content">
+        <li id="main" onclick="ToIndexHtml()" class="nav-list-content"  style="font-size: xx-large;height:5%;position: absolute;top: 15%;left: 5%">
             Continue
         </li>
         <li id="contactus" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToContactUsHtml()"
-            class="nav-list-content nav-title-position">联系我们
+            class="nav-list-content nav-title-position" style="margin-right: 0">联系我们
         </li>
         <li id="new" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToNewHtml()"
             class="nav-list-content nav-title-position-2">招新计划
@@ -40,6 +40,11 @@
         <p class="newpage-content">发送至邮箱：</p>
     </div>
 </div>
+<div style="height: 100px;background-color: #282828;filter: opacity(.9);display: flex">
+    <a href="https://jq.qq.com/?_wv=1027&k=5WUJHaA" style="align-self: center;margin-left: 10%;"><img  width="40px" src="../img/qq.png"/></a>
+    <a href="https://github.com/CQUContinue113" style="align-self: center;margin-left: 3%;"><img  width="40px" src="../img/github.png"/></a>
+    <span style="align-self: center;margin-left: 25%">重庆大学Continue团队</span>
+</div>
 </body>
 <script src="../js/jquery.js"></script>
 <script src="../js/javascript.js"></script>
@@ -58,6 +63,9 @@
 
     function borderdisapper() {
         event.fromElement.style.borderBottom = 'none';
+        var pagename = $('#new');
+
+        pagename.css('borderBottom','2px solid white');
     }
 
     function ToNewHtml() {

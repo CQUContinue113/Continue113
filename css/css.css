@@ -23,7 +23,7 @@ body {
 }
 
 .nav-list {
-    width: 100%;
+    width: 90%;
     height: 100%;
     line-height: 100%;
     margin-top: 0;
@@ -136,19 +136,19 @@ body {
 
 @-webkit-keyframes comeoutlater1 {
     0% {filter:opacity(0);}
-    60% {filter:opacity(0);}
+    66.6% {filter:opacity(0);}
     100% {filter:opacity(1);}
 }
 
 @-webkit-keyframes comeoutlater2 {
     0% {filter:opacity(0);}
-    71% {filter:opacity(0);}
+    75% {filter:opacity(0);}
     100% {filter:opacity(1);}
 }
 
 @-webkit-keyframes comeoutlater3 {
     0% {filter:opacity(0);}
-    77% {filter:opacity(0);}
+    80% {filter:opacity(0);}
     100% {filter:opacity(1);}
 }
 #continue {
@@ -164,33 +164,33 @@ body {
 }
 
 #hereiscontinue{
-    -webkit-animation: titleposition 3s;
-    -moz-animation: titleposition 3s;
-    animation: titleposition 3s;
+    -webkit-animation: titleposition 1s;
+    -moz-animation: titleposition 1s;
+    animation: titleposition 1s;
 }
 
 #prize{
-    -webkit-animation: comeoutlater 6s;
-    -moz-animation: comeoutlater 6s;
-    animation: comeoutlater 6s;
+    -webkit-animation: comeoutlater 2s;
+    -moz-animation: comeoutlater 2s;
+    animation: comeoutlater 2s;
 }
 
 #things{
-    -webkit-animation: comeoutlater1 10s;
-    -moz-animation: comeoutlater1 10s;
-    animation: comeoutlater1 10s;
+    -webkit-animation: comeoutlater1 3s;
+    -moz-animation: comeoutlater1 3s;
+    animation: comeoutlater1 3s;
 }
 
 #prepose{
-    -webkit-animation: comeoutlater2 14s;
-    -moz-animation: comeoutlater2 14s;
-    animation: comeoutlater2 14s;
+    -webkit-animation: comeoutlater2 4s;
+    -moz-animation: comeoutlater2 4s;
+    animation: comeoutlater2 4s;
 }
 
 #daily{
-    -webkit-animation: comeoutlater3 18s;
-    -moz-animation: comeoutlater3 18s;
-    animation: comeoutlater3 18s;
+    -webkit-animation: comeoutlater3 5s;
+    -moz-animation: comeoutlater3 5s;
+    animation: comeoutlater3 5s;
 }
 
 .container-con {
