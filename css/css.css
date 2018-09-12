@@ -59,6 +59,17 @@ body {
     margin-top: 0px;
 }
 
+.conta{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: auto;
+}
+
+
+
+
 .img-position {
     text-align: center;
     margin-top: 0;
@@ -95,36 +106,36 @@ body {
     from{
         position: absolute;
         left: 0;
-        top:10%;
+        top:3.3%;
     }
     to{
         position: absolute;
         left: 15%;
-        top: 10%;
+        top: 3.3%;
     }
 }
 @-moz-keyframes titleposition {
     from{
         position: absolute;
         left: 0;
-        top:10%;
+        top:3.3%;
     }
     to{
         position: absolute;
         left: 15%;
-        top: 10%;
+        top: 3.3%;
     }
 }
 @keyframes titleposition {
     from{
         position: absolute;
         left: 0;
-        top:10%;
+        top:3.3%;
     }
     to{
         position: absolute;
         left: 15%;
-        top: 10%;
+        top: 3.3%;
     }
 }
 
@@ -196,6 +207,10 @@ body {
 .container-con {
     width: 70%;
     margin: 0 auto
+}
+
+.hei{
+    height: 2900px!important;
 }
 
 .newpage-content {

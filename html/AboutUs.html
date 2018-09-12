@@ -10,7 +10,7 @@
 <div class="nav">
     <img src="../img/continue113-1.ico" style="position: absolute;top:10px;left: 10px "/>
     <ul class="nav-list">
-        <li id="main" onclick="ToIndexHtml()" class="nav-list-content"  style="font-size: xx-large;height:5%;position: absolute;top: 15%;left: 5%">
+        <li id="main" onclick="ToIndexHtml()" class="nav-list-content"  style="font-size: xx-large;height:5%;position: absolute;top: 15%;left: 4%">
             Continue
         </li>
         <li id="contactus" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToContactUsHtml()"
@@ -25,37 +25,97 @@
     </ul>
 </div>
 
-<div id="container">
+<div id="container" class="hei">
     <div class="container-con">
-        <p id="hereiscontinue" class="newpage-content large">这里是Continue!</p>
+        <p id="hereiscontinue" class="newpage-content large" style="padding-top: 5%;font-size: 35px">这里是Continue!</p>
         <div style="position: absolute;left: 15%;top: 15%">
             <div id="prize">
-                <p class="white" style="margin-top: 0;padding-top: 10%">我们的荣耀</p>
-                <ul>
-                    <li class="white">2013年微软创新杯一等奖</li>
-                </ul>
+                <p class="white" style="margin-top: 0;padding-top: 10%;font-size: 30px">我们的荣耀<span style="color: grey">honor</span></p>
+                <div class="row">
+                    <div class="row">
+                        <p style="color: white;font-size: 25px">2013年微软创新杯一等奖</p>
+                    </div>
+                    <div class="conta">
+                        <div class="card" style="width: 35%">
+                            <p style="color:white;font-size:20px ">
+                                微软创新杯是目前全球影响最大规模最大的学生创新科技大赛，continue社团也每年都会鼓励大家多多参与，提高自己
+                            </p>
+                        </div>
+                        <div class="card">
+                            <p class="img-position"><img src="../img/timg.jpg" style="width: 40%"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div id="things" style="margin-top: 5%">
-                <p class="white">2018年我们做过的事</p>
-                <ul>
-                    <li class="white">SOSCON 2018</li>
-                </ul>
+            <div id="things" style="margin-top: 5%;overflow: hidden">
+                <p class="white"style="font-size: 30px;float: right;margin-right: 40%">2018年我们做过的事<span style="color: grey">what we done</span></p>
+                <br/>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="row">
+                        <p style="color: white;font-size: 25px">soscon  首届学生开源年会</p>
+                    </div>
+                    <div class="conta">
+                        <div class="card">
+                            <img src="../img/soscon.jpg" style="width: 40%">
+                        </div>
+                        <div class="card" style="width:50%">
+                            <p style="display:inline-block;color:white;font-size:20px ;position: relative;right: 110%">
+                                soscon是全球首届学生开源年会，我们联合的全国众多高校社团联合举办，continue是第一届的承办社区，我们畅想未来。拥抱开源，学生最有感觉。
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="prepose" style="margin-top: 5%;">
-                <p class="white">我们的目标</p>
-                <p class="white">聚集一些有技术，热爱技术的人，做一些学生时代能做的事，因为这时的我们是充满热情，不惧失败的。</p>
+                <p class="white" style="font-size: 30px">我们的目标<span style="color: grey">our goal</span></p>
+                <p class="white" style="font-size: 25px">聚集一些有技术，热爱技术的人，做一些学生时代能做的事
+                    <br>
+                    因为这时的我们是充满热情，不惧失败的
+                    <br>
+                    我们可以一次一次去撞南墙，但不能一次一次失去理想
+                </p>
             </div>
 
-            <div id="daily" style="margin-top: 5%">
-                <p class="white">俱乐部的日常</p>
-                <p class="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;敲代码时候的我们</p>
-                <!--<img src="../img/realcoder.jpg" style="width: 20%"/>
-                <img src="../img/member.png" style="width: 30%;margin-left: 5%"/>-->
-                <p class="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;玩游戏时候的我们</p>
-                <p class="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日常熬夜时候的我们</p>
-                <p class="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看电影时候的我们</p>
+            <div id="daily" style="margin-top: 5%;overflow: hidden">
+                <p class="white" style="font-size: 30px;float: right;margin-right: 40%">俱乐部的日常<span style="color: grey">daily</span></p>
+                <div class="row" style="margin-top: 7%">
+                    <!--<div class="conta">-->
+                    <div class="card">
+                        <p ><img src="../img/realcoder.jpg" style="width: 20%"></p>
+                        <p style="color: white;font-size: 20px">【认真】敲代码</p>
+                    </div>
+                    <!-- </div>-->
+                </div>
+                <div class="row" style="margin-left: 30%;width: 100%">
+                    <!--<div class="conta">-->
+                    <div class="card">
+                        <p ><img src="../img/play.jpg" style="width: 20%"></p>
+                        <p style="color: white;font-size: 20px">【摸鱼】打游戏</p>
+                    </div>
+                    <!-- </div>-->
+                </div>
+                <div class="row" style="margin-left: 60%;width: 100%">
+                    <!--<div class="conta">-->
+                    <div class="card">
+                        <p ><img src="../img/movie.jpg" style="width: 20%"></p>
+                        <p style="color: white;font-size: 20px">看电影【治愈心灵】</p>
+                    </div>
+                    <!-- </div>-->
+                </div>
+                <div class="row">
+                    <!--<div class="conta">-->
+                    <div class="card">
+                        <p style="color: white;font-size:25px">......睿智日常....还有更多...比如打UNO，半夜去看哆啦A梦.....
+                            <br>
+                            当然跟多的还是在一起做【正事】
+                        </p>
+                    </div>
+                    <!-- </div>-->
+                </div>
             </div>
 
         </div>
