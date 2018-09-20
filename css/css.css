@@ -291,6 +291,13 @@ body {
 .container-con {
     width: 80%;
     margin: 0 auto;
+    height: 700px;
+    overflow: auto;
+}
+
+.container-con-aboutus{
+    width: 80%;
+    margin: 0 auto;
     height: 1000px;
     overflow: auto;
 }
