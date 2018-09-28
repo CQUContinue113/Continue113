@@ -20,15 +20,9 @@
 <div class="nav">
     <img id="icon" class="icon" src="img/continue113-1.ico"/>
     <ul class="nav-list">
-        <li id="main" onclick="ToIndexHtml()" class="nav-list-content continuestyle" style="text-shadow: -3px 2px 6px #000000;">
+        <li id="main" onclick="ToIndexHtml()" class="nav-list-content continuestyle" style="text-shadow: -3px 2px 6px #000000;position: absolute;left: 5px">
             Continue
         </li>
-        <!--<li id="contactus" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToContactUsHtml()"
-            class="nav-list-content nav-title-position" style="margin-right: 0">联系我们
-        </li>-->
-        <!--<li id="new" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToNewHtml()"
-            class="nav-list-content nav-title-position-2">招新计划
-        </li>-->
         <li id="aboutus" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToAboutUsHtml()"
             class="nav-list-content nav-title-position-2">关于我们
         </li>
@@ -120,17 +114,11 @@
         event.fromElement.style.borderBottom = 'none';
     }
 
-    function ToNewHtml() {
-        window.location = 'html/new.html';
-    }
 
     function ToAboutUsHtml() {
-        window.location = 'html/AboutUs.html';
+        window.location = 'html/aboutus.html';
     }
 
-    function ToContactUsHtml() {
-        window.location = 'html/ContactUs.html';
-    }
 
     $("#container").PageScroll({
         //html结构

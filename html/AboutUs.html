@@ -1,10 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Continue!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../css/css.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/agency.min.css" rel="stylesheet">
+
+
 </head>
-<body>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<!--<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger"style="color: #178ab8!important;" href="#">
+      <img src="img/continue113-1.ico">
+      Continue
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" style="background-color: #178ab8!important;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="index.html">首页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">关于我们</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>-->
+<div class="title-nav">
+    <img id="icon" class="icon" src="../img/continue113-1.ico"/>
+    <ul class="nav-list">
+        <li id="main" onclick="ToIndexHtml()" class="title-nav-list-content continuestyle"
+            style="text-shadow: -3px 2px 6px #000000;font-family: SourceHanSansSC;!important;position: absolute;left: 5px">
+            Continue
+        </li>
+        <li id="aboutus" onmouseover="borderout()" onmouseout="borderdisapper()" onclick="ToAboutUsHtml()"
+            class="nav-list-content nav-title-position-2" style="font-family: SourceHanSansSC;!important;">关于我们
+        </li>
+    </ul>
+</div>
+
+
+<!-- About -->
+<section id="about" style="background-color: #1d1d1d;z-index: -1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">关于我们</h2>
+                <h3 class="section-subheading text-muted">About us</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image z-index">
+                            <img class="rounded-circle img-fluid" src="../img/continue113.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2011</h4>
+                                <h4 class="subheading">我们的开始<span style="color:grey;">Our begins</span></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    在2011年的九月，刘虓豪和梁策，两位热爱技术的前辈，在重庆大学创立了continue113技术小组，从此开启了放荡不羁爱自由的人生，之后有越来越多的小伙伴也加入了这个集体，一起走上了Coding之路</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image z-index">
+                            <img class="rounded-circle img-fluid" src="../img/icup.jpg" alt="" style="margin-top: 10%">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2012-2015</h4>
+                                <h4 class="subheading">我们在收获<span style="color:grey;">Some honors</span></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Continue技术团队成长地越来越快，也在不停的取得更多的荣誉，在这期间，我们获得了2012、2013年的IBM大型主机技术大赛的二等奖，2013、2014IBMpower校内应用大赛全国二等奖，2013年微软创新杯中国区一等奖，第二届“龙芯杯”开源软件大赛二等奖</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image z-index">
+                            <img class="rounded-circle img-fluid" src="../img/soscon.jpg" alt="" style="margin-top: 10%">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2017-2018</h4>
+                                <h4 class="subheading">我们爱开源<span style="color:grey;">SOSCON</span></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    在2018年，Continue和开源工场社区承办了第一届学生开源年会（简称SOSCON），清华tuna，中科大LUG等一些社区也都作为soscon的联合创始社区为我们的年会承担了责任，我们希望将这种开源文化传承下去，拥抱开源，我们学生更有感觉。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image z-index">
+                            <img class="rounded-circle img-fluid" src="../img/continue3.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2018</h4>
+                                <h4 class="subheading">我们的故事在继续<span style="color:grey;">Go On</span></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Continue团队仍然在前进，我们仍然想要创造更多。聚集更多热爱技术热爱生活的伙伴，做更多学生时代能做的事！
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image z-index">
+                            <h4>Be Part
+                                <br>Of Our
+                                <br>Story!</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" style="background-color: black;margin-top: -150px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase" style="margin-top: -100px">我们的日常</h2>
+                <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+
+                <p><img src="../img/realcoder.jpg" style="width: 70%"></p>
+                <p class="text-muted">【认真】敲代码</p>
+            </div>
+            <div class="col-md-4">
+
+                <p><img src="../img/play1.JPG" style="width: 70%"></p>
+                <p class="text-muted">【摸鱼】打游戏</p>
+            </div>
+            <div class="col-md-4">
+
+                <p><img src="../img/movie.jpg" style="width: 70%"></p>
+                <p class="text-muted"> 看电影【治愈心灵】</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase" style="margin-top: 50px">Be part of our story</h2>
+                <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<!--<footer>-->
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">重庆大学Continue团队</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                        <a href="https://github.com/CQUContinue113">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://jq.qq.com/?_wv=1027&k=5WUJHaA">
+                            <i class="fab fa-qq"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>-->
+<!--</footer>-->
+    <div class="bottombar_1">
+        <a href="https://jq.qq.com/?_wv=1027&k=5WUJHaA" style="align-self: center;margin-left: 10%;"><img
+                width="40px" src="../img/qq.png"/></a>
+        <a href="https://github.com/CQUContinue113" style="align-self: center;margin-left: 3%;"><img
+                width="40px" src="../img/github.png"/></a>
+        <span style="align-self: center;margin-left: 25%;color: #8c8c8c;font-size: medium">IBM 技术俱乐部 | 重庆大学 Continue 团队</span>
+    </div>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="../js/jquery.js"></script>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Contact form JavaScript -->
+<script src="../js/jqBootstrapValidation.js"></script>
+<script src="../js/contact_me.js"></script>
+
+<!-- Custom scripts for this template -->
+<!--<script src="../js/agency.min.js"></script>-->
 
 </body>
+<script>
+    var pagename = $('#aboutus');
+
+    pagename.css('borderBottom','2px solid white');
+
+    function ToIndexHtml() {
+        window.location = '../index.html';
+    }
+
+    /*function borderout() {
+        event.toElement.style.borderBottom = '2px solid white'
+    }*/
+    function borderout() {
+        event.toElement.style.borderBottom = '2px solid white'
+    }
+
+    function borderdisapper() {
+        event.fromElement.style.borderBottom = 'none';
+    }
+
+
+    function ToAboutUsHtml() {
+        window.location = 'aboutus.html';
+    }
+
+</script>
 </html>
