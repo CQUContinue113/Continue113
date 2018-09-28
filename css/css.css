@@ -932,7 +932,7 @@ body {
 }*/
 
 .page2contentblock{
-    padding-top: 15%
+    padding-top: 12%
 }
 
 .leftborder{
@@ -1121,10 +1121,12 @@ body {
          margin: 0 10%;
      }
     .plantitle{
+        font-size: 24px;
         text-align: center;
         padding-bottom: 0%
     }
     .acrossbar{
+        width: 30%;
         text-align: center;
     }
     .verticalbar{
@@ -1137,6 +1139,9 @@ body {
         display: none;
     }
 
+    .page2contentblock{
+        padding-top: 18%
+    }
 
     .plan-content{
         vertical-align: middle;
