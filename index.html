@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="UTF-8">
     <title>Hello continue</title>
     <link rel="icon" href="img/continue113-1.ico">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/css.css">
-    <link rel="icon" href="img/continue113-1.ico">
-    <link rel="stylesheet" href="css/pagescroll.css">
-    <style type="text/css">
-        <!--
-        html body{
-            height: 100%;
-        }
-        -->
-    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.scrollpage.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
-<div class="nav">
+<div class="nav" style="z-index:19861107">
     <img id="icon" class="icon" src="img/continue113-1.ico"/>
     <ul class="nav-list">
         <li id="main" onclick="ToIndexHtml()" class="nav-list-content continuestyle" style="text-shadow: -3px 2px 6px #000000;position: absolute;left: 5px">
@@ -30,81 +26,67 @@
         </li>
     </ul>
 </div>
-
-<div id="container" style="background-color: #e6e6e6!important;text-shadow: -3px 2px 6px #000000;">
-    <div class="sections">
-        <div id="page1"  class="section section-1">
-            <div style="background-color: #1d1d1d;height: auto">
-                <div style="overflow: hidden">
-                    <p class="img-position" style="background-color:  #1d1d1d;margin-bottom: 0;padding-top: 2%;text-align: right">
-                        <embed id="continue" class="check continuepicstyle" src="img/continue.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/"/>
-                    </p>
-                    <p class="img-position" style="background-color:  #1d1d1d;margin-bottom: 0;padding-top: 2%;float: right;text-align: left">
-                        <!--<div style="height: 29%;border: 3px solid white"></div>-->
-                        <embed id="continue1" class="check IBMpicstyle_1" src="img/IBM.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/"/>
-                    </p>
-                </div>
+<div class="scroll_page">
+    <div class="page first">
+        <div style="background-color: #1d1d1d;height: auto">
+            <div style="overflow: hidden">
+                <p class="img-position" style="background-color:  #1d1d1d;margin-bottom: 0;padding-top: 2%;text-align: right">
+                    <embed id="continue" class="check continuepicstyle" src="img/continue.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/"/>
+                </p>
+                <p class="img-position" style="background-color:  #1d1d1d;margin-bottom: 0;padding-top: 2%;float: right;text-align: left">
+                    <!--<div style="height: 29%;border: 3px solid white"></div>-->
+                    <embed id="continue1" class="check IBMpicstyle_1" src="img/IBM.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/"/>
+                </p>
             </div>
-            <div>
-                <img id="flash" src="img/arrow.png" style="position:absolute;bottom:0;width: 10%;margin: 2% 45%">
-            </div>
-            <!--<div>
-                <p class="font" style="position: absolute;bottom:0;width:100%;background-color: gray;padding: 2% 0;margin: 0">世有伯乐,然后有千里马</p>
-            </div>-->
         </div>
-        <div id="page2"  class="section section-2" style="background-color: #1d1d1d">
-            <div id="content" class="page2contentblock" style="overflow: hidden">
-                <embed id="leftborder" class="leftborder" src="img/leftborder.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/"/>
-                <div id="new" class="new">
-                    <div class="plan">
-                        <h2 id="plantitle" class="plantitle">招新计划</h2>
-
-                        <img id="acrossbar" src="img/acrossbar.svg" class="acrossbar">
-                    </div>
-                    <img id="verticalbar" class="verticalbar" src="img/verticalbar.svg"/>
-                    <div class="plan-content">
-                        <p class="plancontent">纳新报名截止时间: 10 月 14 日 23：59</p>
-                        <br/>
-                        <p class="plancontent">纳新对象：重庆大学全体 2018 级学生</p>
-                        <br/>
-                        <p class="plancontent">纳新人数：预计招收 15 人左右</p>
-                        <br/>
-                        <p class="plancontent">我们的目的：在新的学期里，能够为俱乐部添加更多的人才，找到一批志同道合、崇尚自由、热爱技术、热爱学习、热爱生活的人，一起做我们喜欢的、很酷的事情。</p>
-                        <br/>
-                        <p class="plancontent">报名表：<a href="file/IBM报名表.docx" download="IBM报名表" style="color: white">IBM 报名表下载</a></p>
-                        <br/>
-                        <p class="plancontent">报名表投递邮箱：masterspark@openingsource.org</p>
-                    </div>
-                </div>
-                <embed id="rightborder" class="rightborder" style="vertical-align: middle" src="img/rightborder.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/"/>
-            </div>
-            <div class="bottombar">
-                <a href="https://jq.qq.com/?_wv=1027&k=5WUJHaA" style="align-self: center;margin-left: 10%;"><img
-                        width="40px" src="img/qq.png"/></a>
-                <a href="https://github.com/CQUContinue113" style="align-self: center;margin-left: 3%;"><img
-                        width="40px" src="img/github.png"/></a>
-                <span style="align-self: center;margin-left: 25%;color: #8c8c8c;font-size: medium">IBM 技术俱乐部 | 重庆大学 Continue 团队</span>
-            </div>
+        <div>
+            <img id="flash" src="img/arrow.png" style="position:absolute;bottom:0;width: 10%;margin: 2% 45%">
+        </div>
+        <div class="control">
+            <a href="#" class="next">Next</a>
         </div>
     </div>
+    <div class="page second">
+        <div id="content" class="page2contentblock" style="overflow: hidden">
+            <embed id="leftborder" class="leftborder" src="img/leftborder.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/"/>
+            <div id="new" class="new">
+                <div class="plan">
+                    <h2 id="plantitle" class="plantitle">招新计划</h2>
+
+                    <img id="acrossbar" src="img/acrossbar.svg" class="acrossbar">
+                </div>
+                <img id="verticalbar" class="verticalbar" src="img/verticalbar.svg"/>
+                <div class="plan-content" style="font-size: larger">
+                    <p class="plancontent">纳新报名截止时间: 10 月 14 日 23：59</p>
+                    <br/>
+                    <p class="plancontent">纳新对象：重庆大学全体 2018 级学生</p>
+                    <br/>
+                    <p class="plancontent">纳新人数：预计招收 15 人左右</p>
+                    <br/>
+                    <p class="plancontent">我们的目的：在新的学期里，能够为俱乐部添加更多的人才，找到一批志同道合、崇尚自由、热爱技术、热爱学习、热爱生活的人，一起做我们喜欢的、很酷的事情。</p>
+                    <br/>
+                    <p class="plancontent">报名表：<a href="file/IBM报名表.docx" download="IBM报名表" style="color: white">IBM 报名表下载</a></p>
+                    <br/>
+                    <p class="plancontent">报名表投递邮箱：masterspark@openingsource.org</p>
+                </div>
+            </div>
+            <embed id="rightborder" class="rightborder" style="vertical-align: middle" src="img/rightborder.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/"/>
+        </div>
+        <div class="bottombar">
+            <a href="https://jq.qq.com/?_wv=1027&k=5WUJHaA" style="align-self: center;margin-left: 10%;"><img
+                    width="40px" src="img/qq.png"/></a>
+            <a href="https://github.com/CQUContinue113" style="align-self: center;margin-left: 3%;"><img
+                    width="40px" src="img/github.png"/></a>
+            <span style="align-self: center;margin-left: 25%;color: #8c8c8c;font-size: medium">IBM 技术俱乐部 | 重庆大学 Continue 团队</span>
+        </div>
+        <div class="control">
+            <a href="#" class="prev">Prev</a>
+        </div>
+    </div>
+
 </div>
 </body>
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/PageScroll.js"></script>
 <script>
-    /*var pic = document.getElementById("continue")
-    document.getElementById("continue").addEventListener("animationend",function () {
-        pic.style.borderRight = '3px solid white'
-    })*/
-
-    /*var pic_1 = $("#continue");
-    document.getElementById("continue").addEventListener("animationend",function () {
-        pic_1.animate({
-            borderRight:'3px solid white'
-        },2000)
-
-    })*/
-
     function ToIndexHtml() {
         window.location = 'index.html';
     }
@@ -120,40 +102,6 @@
 
     function ToAboutUsHtml() {
         window.location = 'html/aboutus.html';
-    }
-
-
-    $("#container").PageScroll({
-        //html结构
-        selectors : {
-            sections : ".sections",
-            section : ".section",
-            insection : ".insection",
-            page : ".pages",
-            active : ".active",
-            controlPrev : ".control-prev",
-            controlNext : ".control-next"
-        },
-        //页面开始的索引值,默认为0,从0开始记数
-        index : 0,
-        //动画效果，5种：默认为ease,linear,ease-in,ease-out,ease-in-out
-        easing : "ease",
-        //动画时间，单位毫秒
-        duration : 500,
-        //是否循环播放
-        loop : false,
-        //是否进行分页处理
-        pagination : true,
-        //是否触发键盘事件
-        keyboard :true,
-        //滚动方式，默认竖屏滚动，横屏滚动为horizontal
-        direction : "vertical",
-        //动画执行后执行的回调函数
-        callback : ""
-    });
-    //$("#container").PageScroll("init");
-    function tonewinfo() {
-
     }
 </script>
 </html>

@@ -141,7 +141,7 @@
 				this.activeClass = this.selectors.active.substring(1),
 				pageHtml = "<ul class="+this.pagesClass+">";
 				for(var i=0;i<this.pagesCount;i++){
-					pageHtml +="<li></li>";
+					pageHtml +="<li style='width: 40px;height: 40px'></li>";
 				}
 				pageHtml+="</ul>"; 
 				this.element.append(pageHtml);
@@ -196,7 +196,28 @@
 					}
 				})
 
-				//键盘监听事件
+				//
+				/*me.element.on("touchstart touchmove touchend",function (e) {
+					switch (e.type)
+					{
+						case 'touchstart':
+							break;
+						case 'touchmove':
+							break;
+						case 'touchend' :
+                            if(me.canScroll){
+                                var delta = e.originalEvent.wheelDelta || -e.originalEvent.detail;
+                                if(delta > 0 &&(me.index && !me.settings.loop || me.settings.loop)){
+                                    me.prev();
+                                }else if(delta < 0 && (me.index < (me.pagesCount - 1) && !me.settings.loop || me.settings.loop)){
+                                    me.next();
+                                }
+                            }
+					}
+                })*/
+
+
+                //键盘监听事件
 				if(me.settings.keyboard){
 					$(window).on("keydown",function(e){
 						var keyCode = e.keyCode;
